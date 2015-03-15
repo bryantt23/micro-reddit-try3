@@ -4,4 +4,5 @@ class Post < ActiveRecord::Base
     validates_length_of :body, :minimum => 2
 
   belongs_to :user
+    has_many :comments
 end
